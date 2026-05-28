@@ -1,0 +1,307 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dwell Source + Design | Open House Event Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; }
+        .heading { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 600; }
+        .display { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0.3) 100%); }
+        .hero-bg { background-image: url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2400&q=80'); background-size: cover; background-position: center; }
+        .bottom-bg { background-image: url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=2400&q=80'); background-size: cover; background-position: center; }
+        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); }
+    </style>
+</head>
+<body class="bg-[#FDFAF5] text-gray-700">
+    <nav class="fixed w-full z-50 bg-[#FDFAF5]/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <span class="text-xl display font-bold text-[#5C4033]">Dwell Source + Design</span>
+            </div>
+            <div class="hidden md:flex space-x-8 items-center text-sm tracking-wide">
+                <a href="#packages" class="text-gray-600 hover:text-[#8B7355] transition">Packages</a>
+                <a href="#addons" class="text-gray-600 hover:text-[#8B7355] transition">Add-Ons</a>
+                <a href="#diy" class="text-gray-600 hover:text-[#8B7355] transition">DIY</a>
+                <a href="#contact" class="bg-[#8B7355] text-white px-6 py-2.5 rounded-full text-sm hover:bg-[#6B5B45] transition">Book Now</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-bg min-h-screen relative flex items-center">
+        <div class="hero-gradient absolute inset-0"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 pt-24">
+            <div class="max-w-2xl">
+                <p class="text-[#8B7355] tracking-[0.3em] uppercase text-sm font-medium mb-4">Reno & Lake Tahoe</p>
+                <h1 class="text-5xl md:text-6xl display font-light text-[#3E2723] leading-tight mb-6">
+                    Low-Cost Remodels<br>
+                    <span class="font-bold">That Sell Homes</span>
+                </h1>
+                <p class="text-lg text-gray-600 leading-relaxed mb-8 max-w-xl">
+                    We help homeowners and real estate agents increase property value through 
+                    strategic interior design, painting, flooring, and curb appeal updates — 
+                    without the high cost of a full renovation.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#packages" class="bg-[#8B7355] text-white px-8 py-3.5 rounded-full font-medium hover:bg-[#6B5B45] transition shadow-lg">
+                        View Packages
+                    </a>
+                    <a href="#contact" class="border border-[#C4A882] text-[#6B5B45] px-8 py-3.5 rounded-full font-medium hover:bg-[#8B7355] hover:text-white transition">
+                        Book a Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="py-20 bg-[#FDFAF5]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-[#8B7355] tracking-[0.3em] uppercase text-sm font-medium mb-4">Welcome</p>
+            <h2 class="text-4xl display font-light text-[#3E2723] mb-6">Strategic Updates That<br><span class="font-bold">Maximize Your Sale Price</span></h2>
+            <p class="text-lg text-gray-500 leading-relaxed max-w-3xl mx-auto">
+                We offer affordable interior design and remodeling services specifically tailored 
+                for homes going on the market. From fresh paint and new flooring to curb appeal 
+                enhancements — we make homes look significantly more expensive than the investment.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 bg-[#F5F0EB]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-[#8B7355] tracking-[0.3em] uppercase text-sm font-medium mb-4">Our Services</p>
+                <h2 class="text-4xl display font-light text-[#3E2723]">Interior Design <span class="font-bold">& Remodeling</span></h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Low-cost updates that make homes sell faster and for more money.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-white/80 p-8 rounded-2xl card-hover transition border border-[#E8DCC8]">
+                    <div class="w-14 h-14 bg-[#E8DCC8] rounded-xl flex items-center justify-center mb-4"><i class="fas fa-paint-roller text-[#8B7355] text-xl"></i></div>
+                    <h3 class="text-xl display font-bold text-[#3E2723] mb-3">Paint & Refresh</h3>
+                    <p class="text-gray-500 text-sm">Interior painting, accent walls, and color consultation. Fresh paint is the highest ROI update you can make.</p>
+                </div>
+                <div class="bg-white/80 p-8 rounded-2xl card-hover transition border border-[#E8DCC8]">
+                    <div class="w-14 h-14 bg-[#E8DCC8] rounded-xl flex items-center justify-center mb-4"><i class="fas fa-border-all text-[#8B7355] text-xl"></i></div>
+                    <h3 class="text-xl display font-bold text-[#3E2723] mb-3">Flooring Updates</h3>
+                    <p class="text-gray-500 text-sm">Affordable flooring solutions — luxury vinyl, laminate, tile, or refinishing existing hardwoods that maximize perceived value.</p>
+                </div>
+                <div class="bg-white/80 p-8 rounded-2xl card-hover transition border border-[#E8DCC8]">
+                    <div class="w-14 h-14 bg-[#E8DCC8] rounded-xl flex items-center justify-center mb-4"><i class="fas fa-home text-[#8B7355] text-xl"></i></div>
+                    <h3 class="text-xl display font-bold text-[#3E2723] mb-3">Curb Appeal</h3>
+                    <p class="text-gray-500 text-sm">Exterior updates that make a strong first impression — landscaping, front door refresh, and entryway enhancements.</p>
+                </div>
+                <div class="bg-white/80 p-8 rounded-2xl card-hover transition border border-[#E8DCC8]">
+                    <div class="w-14 h-14 bg-[#E8DCC8] rounded-xl flex items-center justify-center mb-4"><i class="fas fa-lightbulb text-[#8B7355] text-xl"></i></div>
+                    <h3 class="text-xl display font-bold text-[#3E2723] mb-3">Interior Design</h3>
+                    <p class="text-gray-500 text-sm">Strategic design consultation — furniture layout, lighting updates, and fixture upgrades that make homes feel move-in ready.</p>
+                </div>
+                <div class="bg-white/80 p-8 rounded-2xl card-hover transition border border-[#E8DCC8]">
+                    <div class="w-14 h-14 bg-[#E8DCC8] rounded-xl flex items-center justify-center mb-4"><i class="fas fa-tools text-[#8B7355] text-xl"></i></div>
+                    <h3 class="text-xl display font-bold text-[#3E2723] mb-3">Recommended Updates</h3>
+                    <p class="text-gray-500 text-sm">We assess your property and recommend the highest-ROI updates tailored to your budget and timeline.</p>
+                </div>
+                <div class="bg-white/80 p-8 rounded-2xl card-hover transition border border-[#E8DCC8]">
+                    <div class="w-14 h-14 bg-[#E8DCC8] rounded-xl flex items-center justify-center mb-4"><i class="fas fa-couch text-[#8B7355] text-xl"></i></div>
+                    <h3 class="text-xl display font-bold text-[#3E2723] mb-3">Staging</h3>
+                    <p class="text-gray-500 text-sm">Full staging services to showcase the updated space for showings and photos.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12 pt-12 border-t border-[#E8DCC8]">
+                <p class="text-[#8B7355] tracking-[0.3em] uppercase text-sm font-medium mb-2">Also Offering</p>
+                <h2 class="text-3xl display font-light text-[#3E2723] mb-6">Open House <span class="font-bold">Event Services</span></h2>
+                <p class="text-gray-500 mb-6 max-w-xl mx-auto">Elevate your showing with styled snack carts, signage, beverage service, and full hosting — from $495.</p>
+                <a href="#addons" class="inline-block border border-[#8B7355] text-[#8B7355] px-6 py-3 rounded-full text-sm font-medium hover:bg-[#8B7355] hover:text-white transition">See Add-Ons →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages -->
+    <section id="packages" class="py-20 bg-[#FDFAF5]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <p class="text-[#8B7355] tracking-[0.3em] uppercase text-sm font-medium mb-4">Investment Tiers</p>
+                <h2 class="text-4xl display font-light text-[#3E2723]">Our <span class="font-bold">Service Packages</span></h2>
+                <p class="text-gray-500 mt-4 max-w-2xl mx-auto">Selected tiers designed to maximize your home's equity.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/80 p-8 rounded-2xl card-hover transition border border-[#E8DCC8] flex flex-col">
+                    <h3 class="text-xl display font-bold text-[#3E2723] mb-2">The Basic Refresh</h3>
+                    <p class="text-[#8B7355] font-bold mb-4">Starting at $1,200</p>
+                    <ul class="text-sm text-gray-500 space-y-3 mb-8 flex-grow">
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Professional Color Consultation</li>
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Targeted Interior Paint Refresh</li>
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Cabinet Hardware Upgrade</li>
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Final "Market-Ready" Walkthrough</li>
+                    </ul>
+                    <a href="#contact" class="text-center bg-[#8B7355] text-white py-3 rounded-full text-sm font-medium hover:bg-[#6B5B45] transition">Select Package</a>
+                </div>
+                <div class="bg-[#3E2723] p-8 rounded-2xl card-hover transition border border-[#3E2723] flex flex-col text-white transform scale-105 shadow-2xl">
+                    <div class="bg-[#8B7355] text-white text-[10px] uppercase tracking-widest font-bold py-1 px-3 rounded-full self-start mb-4">Most Popular</div>
+                    <h3 class="text-xl display font-bold mb-2">The Market Ready</h3>
+                    <p class="text-[#C4A882] font-bold mb-4">Starting at $3,500</p>
+                    <ul class="text-sm text-white/80 space-y-3 mb-8 flex-grow">
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Everything in Basic Refresh</li>
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Flooring Update (LVP or Carpet)</li>
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Strategic Light Fixture Swaps</li>
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Entryway Curb Appeal Update</li>
+                    </ul>
+                    <a href="#contact" class="text-center bg-white text-[#3E2723] py-3 rounded-full text-sm font-medium hover:bg-gray-100 transition">Select Package</a>
+                </div>
+                <div class="bg-white/80 p-8 rounded-2xl card-hover transition border border-[#E8DCC8] flex flex-col">
+                    <h3 class="text-xl display font-bold text-[#3E2723] mb-2">The Full Premiere</h3>
+                    <p class="text-[#8B7355] font-bold mb-4">Starting at $7,500</p>
+                    <ul class="text-sm text-gray-500 space-y-3 mb-8 flex-grow">
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Everything in Market Ready</li>
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Professional Interior Staging</li>
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Bathroom Vanity Refresh</li>
+                        <li><i class="fas fa-check text-[#C4A882] mr-2"></i> Professional Listing Photography</li>
+                    </ul>
+                    <a href="#contact" class="text-center bg-[#8B7355] text-white py-3 rounded-full text-sm font-medium hover:bg-[#6B5B45] transition">Select Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add-Ons -->
+    <section id="addons" class="py-20 bg-[#F5F0EB]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <p class="text-[#8B7355] tracking-[0.3em] uppercase text-sm font-medium mb-4">A La Carte</p>
+                    <h2 class="text-4xl display font-light text-[#3E2723]">Service <span class="font-bold">Add-Ons</span></h2>
+                </div>
+                <p class="text-gray-500 md:max-w-md mt-4 md:mt-0">Customize your experience with these specific high-impact enhancements.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl border border-[#E8DCC8] card-hover transition">
+                    <i class="fas fa-cookie-bite text-[#8B7355] text-2xl mb-4"></i>
+                    <h4 class="font-bold text-[#3E2723] mb-2">Open House Hosting</h4>
+                    <p class="text-xs text-gray-500 mb-4">Styled snack carts, signage, and professional hosting service.</p>
+                    <p class="text-sm font-bold text-[#8B7355]">$495+</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-[#E8DCC8] card-hover transition">
+                    <i class="fas fa-leaf text-[#8B7355] text-2xl mb-4"></i>
+                    <h4 class="font-bold text-[#3E2723] mb-2">Curb Appeal Plus</h4>
+                    <p class="text-xs text-gray-500 mb-4">Intensive front-yard cleanup and seasonal floral arrangements.</p>
+                    <p class="text-sm font-bold text-[#8B7355]">$850+</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-[#E8DCC8] card-hover transition">
+                    <i class="fas fa-lightbulb text-[#8B7355] text-2xl mb-4"></i>
+                    <h4 class="font-bold text-[#3E2723] mb-2">Lighting Curation</h4>
+                    <p class="text-xs text-gray-500 mb-4">Selection and installation of modern, high-ROI light fixtures.</p>
+                    <p class="text-sm font-bold text-[#8B7355]">$600+</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl border border-[#E8DCC8] card-hover transition">
+                    <i class="fas fa-camera text-[#8B7355] text-2xl mb-4"></i>
+                    <h4 class="font-bold text-[#3E2723] mb-2">Photo Styling</h4>
+                    <p class="text-xs text-gray-500 mb-4">A half-day styling session specifically for your professional photos.</p>
+                    <p class="text-sm font-bold text-[#8B7355]">$400+</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIY -->
+    <section id="diy" class="py-20 bg-[#FDFAF5]">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="bg-[#3E2723] text-white rounded-3xl p-12 overflow-hidden relative">
+                <div class="absolute top-0 right-0 p-8 opacity-10">
+                    <i class="fas fa-hammer text-9xl rotate-12"></i>
+                </div>
+                <div class="relative z-10">
+                    <p class="text-[#C4A882] tracking-[0.3em] uppercase text-sm font-medium mb-4">Self-Starter Options</p>
+                    <h2 class="text-4xl display font-light mb-6">Dwell <span class="font-bold">DIY Guides</span></h2>
+                    <p class="text-lg text-white/70 mb-8 max-w-2xl mx-auto">Prefer to do the heavy lifting yourself? We provide the professional roadmap so you can execute the perfect remodel on your own schedule.</p>
+                    <div class="grid md:grid-cols-2 gap-8 mb-10">
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 text-left">
+                            <h4 class="font-bold text-[#C4A882] mb-2">The Dwell Blueprint</h4>
+                            <p class="text-sm text-white/80">A complete, custom punch-list of recommended updates, paint codes, and sourcing links for your specific home.</p>
+                            <p class="mt-4 font-bold text-white">$495</p>
+                        </div>
+                        <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 text-left">
+                            <h4 class="font-bold text-[#C4A882] mb-2">Virtual Design Session</h4>
+                            <p class="text-sm text-white/80">A 90-minute video consultation to review your space and answer all your remodeling and design questions.</p>
+                            <p class="mt-4 font-bold text-white">$250</p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="inline-block bg-[#8B7355] text-white px-10 py-4 rounded-full font-medium hover:bg-[#6B5B45] transition shadow-lg">Get Your Custom Guide</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Dwell -->
+    <section class="py-20 bg-[#FDFAF5]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-[#8B7355] tracking-[0.3em] uppercase text-sm font-medium mb-4">Why Dwell</p>
+            <h2 class="text-4xl display font-light text-[#3E2723] mb-10">More Value. <span class="font-bold">Lower Cost.</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="w-16 h-16 bg-[#E8DCC8] rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-chart-line text-[#8B7355] text-xl"></i></div>
+                    <p class="text-gray-700 font-medium">High ROI</p>
+                    <p class="text-sm text-gray-500">Strategic updates that increase sale price without full renovation costs</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-[#E8DCC8] rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-hand-holding-heart text-[#8B7355] text-xl"></i></div>
+                    <p class="text-gray-700 font-medium">Full-Service</p>
+                    <p class="text-sm text-gray-500">From consultation to completion — we handle every detail</p>
+                </div>
+                <div>
+                    <div class="w-16 h-16 bg-[#E8DCC8] rounded-full flex items-center justify-center mx-auto mb-4"><i class="fas fa-star text-[#8B7355] text-xl"></i></div>
+                    <p class="text-gray-700 font-medium">Tailored to Sell</p>
+                    <p class="text-sm text-gray-500">Every recommendation is designed to maximize your listing's appeal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lake Showcase -->
+    <section class="bottom-bg py-24 relative">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl display text-white font-light">Serving Reno &<br><span class="font-bold">Lake Tahoe</span></h2>
+            <p class="text-xl text-white/80 mt-4">Elevating open houses across the region.</p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-[#FDFAF5]">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-[#8B7355] tracking-[0.3em] uppercase text-sm font-medium mb-4">Let's Work Together</p>
+            <h2 class="text-4xl display font-light text-[#3E2723] mb-4">Book Your <span class="font-bold">Next Open House</span></h2>
+            <p class="text-gray-500 mb-8">Every home is different. We're happy to build custom packages for your listing.</p>
+            <div class="bg-[#F5F0EB] rounded-3xl p-10 max-w-xl mx-auto border border-[#E8DCC8]">
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-[#E8DCC8] rounded-full flex items-center justify-center"><i class="fas fa-map-pin text-[#8B7355]"></i></div>
+                        <div class="text-left"><p class="font-medium text-[#3E2723]">Serving</p><p class="text-gray-500">Reno, NV & Lake Tahoe, CA</p></div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-[#E8DCC8] rounded-full flex items-center justify-center"><i class="fas fa-envelope text-[#8B7355]"></i></div>
+                        <div class="text-left"><p class="font-medium text-[#3E2723]">Email</p><p class="text-gray-500">hello@dwellsource.com</p></div>
+                    </div>
+                </div>
+                <a href="#" class="mt-8 block bg-[#8B7355] text-white py-4 rounded-full font-medium hover:bg-[#6B5B45] transition shadow-lg">
+                    <i class="fas fa-calendar mr-2"></i> Book a Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#3E2723] text-gray-400 py-10">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-lg display text-[#E8DCC8] font-bold mb-1">Dwell Source + Design</p>
+            <p class="text-sm text-[#C4A882] mb-4">Reno, NV | Lake Tahoe, CA</p>
+            <p class="text-xs">© 2024 Dwell Source + Design LLC. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
